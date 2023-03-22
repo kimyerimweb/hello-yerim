@@ -1,5 +1,7 @@
-@import 'variables/colors';
-@import 'variables/typography';
+@import '@/assets/scss/variables/colors';
+@import '@/assets/scss/variables/typography';
 
-@import 'base/reset';
-@import 'base/global';
+@import '@/assets/scss/base/reset';
+@import '@/assets/scss/base/global';
+
+@import '@/assets/scss/layouts/grids';
