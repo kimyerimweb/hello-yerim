@@ -16,11 +16,11 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
 .container {
   width: 100%;
   padding: 0 $sm-margin;
-  margin: 0 auto;
 
   .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 
     [class^='col-'] {
       padding: 0 $gutter / 2;
