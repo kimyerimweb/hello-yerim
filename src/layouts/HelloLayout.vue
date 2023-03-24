@@ -60,22 +60,36 @@ h1 {
 }
 
 .gnb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $gnb-height-sm;
+  background-color: $white;
   border-bottom: 1px solid $border;
-  margin-bottom: 20px;
 
   &-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: $gnb-height-sm;
   }
 
   @include tablet {
-    margin-bottom: 30px;
+    height: $gnb-height-md;
 
     &-wrapper {
-      height: 80px;
+      height: $gnb-height-md;
     }
+  }
+}
+
+.content {
+  $content-margin-top: 20px;
+  margin-top: $gnb-height-sm + $content-margin-top;
+
+  @include tablet {
+    margin-top: $gnb-height-md + $content-margin-top;
   }
 }
 </style>
