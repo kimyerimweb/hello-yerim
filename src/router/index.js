@@ -5,6 +5,7 @@ import HelloLayout from '@/layouts/HelloLayout'
 import HomeView from '@/views/HomeView'
 import i18nView from '@/views/i18nView'
 import DatetimeView from '@/views/DatetimeView'
+import l10nView from '@/views/l10nView'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,7 @@ const routes = [
       { path: 'home', component: HomeView, name: 'home' },
       { path: 'i18n', component: i18nView, name: 'i18n' },
       { path: 'datetime', component: DatetimeView, name: 'datetime' },
+      { path: 'l10n', component: l10nView, name: 'l10n' },
     ],
   },
 ]

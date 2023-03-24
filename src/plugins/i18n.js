@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import dateTimeFormats from '@/locales/format/datetime'
+import numberFormats from '@/locales/format/number'
+import pluralizationRules from '@/locales/format/pluralization'
 
 Vue.use(VueI18n)
 
@@ -26,4 +28,6 @@ export default new VueI18n({
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
   messages: loadLocaleMessages(),
   dateTimeFormats,
+  numberFormats,
+  pluralizationRules,
 })

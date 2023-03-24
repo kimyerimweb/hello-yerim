@@ -2,5 +2,8 @@
   "common": {
     "selectLanguage": "Select Language",
     "text": "hello! You choose English. Have a good day."
+  },
+  "plural": {
+    "banana": "no bananas | {n} banana | {n} bananas"
   }
 }

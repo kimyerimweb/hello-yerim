@@ -30,7 +30,7 @@ export default {
       projects: [
         {
           year: 2022,
-          topics: ['i18n', 'datetime'],
+          topics: ['i18n', 'datetime', 'l10n'],
         },
         {
           year: 2023,
