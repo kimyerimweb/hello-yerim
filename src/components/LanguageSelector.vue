@@ -45,15 +45,13 @@ export default {
       let language
       if (cookieLanguage) {
         language = cookieLanguage
-      }
-
-      if (this.options.includes(browserLanguage)) {
+      } else if (this.options.includes(browserLanguage)) {
         language = browserLanguage
       } else {
         language = defaultLanguage
       }
 
-      this.setLangaugePreference(language)
+      this.setLanguagePreference(language)
     },
     setLanguagePreference(language) {
       this.languagePreference = language
@@ -67,6 +65,9 @@ export default {
     toggleOptions() {
       this.isOpen = !this.isOpen
     },
+  },
+  created() {
+    this.getLanguagePreference()
   },
 }
 </script>
