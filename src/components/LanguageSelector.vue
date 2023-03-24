@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       languagePreference: null,
-      options: ['en', 'ar', 'ru', 'ko', 'mn'],
+      options: ['en', 'ar', 'ru', 'ko'],
       isOpen: false,
     }
   },
