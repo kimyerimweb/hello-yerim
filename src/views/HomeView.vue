@@ -30,7 +30,14 @@ export default {
       projects: [
         {
           year: 2022,
-          topics: ['i18n', 'datetime', 'l10n'],
+          topics: [
+            'i18n',
+            'datetime',
+            'l10n',
+            'asset-lazy-loading',
+            'parallax-scroll',
+            'vue-transition',
+          ],
         },
         {
           year: 2023,
@@ -57,7 +64,7 @@ h2 {
 h3 {
   font-size: 20px;
   color: $primary;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 .link {
   &-box {
@@ -66,10 +73,12 @@ h3 {
 
   &-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &-item {
     margin-right: 8px;
+    margin-bottom: 8px;
   }
 }
 </style>
