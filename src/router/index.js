@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import HelloLayout from '@/layouts/HelloLayout'
 import HomeView from '@/views/HomeView'
 import i18nView from '@/views/i18nView'
+import DatetimeView from '@/views/DatetimeView'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,7 @@ const routes = [
     children: [
       { path: 'home', component: HomeView, name: 'home' },
       { path: 'i18n', component: i18nView, name: 'i18n' },
+      { path: 'datetime', component: DatetimeView, name: 'datetime' },
     ],
   },
 ]

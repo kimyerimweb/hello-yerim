@@ -30,11 +30,11 @@ export default {
       projects: [
         {
           year: 2022,
-          topics: [],
+          topics: ['i18n', 'datetime'],
         },
         {
           year: 2023,
-          topics: ['i18n'],
+          topics: [],
         },
       ],
     }
