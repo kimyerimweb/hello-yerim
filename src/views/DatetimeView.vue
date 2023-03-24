@@ -2,21 +2,23 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 col-md-12 col-lg-12">
-        <ul class="datetimes">
-          <h2>DateTime</h2>
-          <li class="date">
-            <Tag class="gray">DATE</Tag>
-            <span>{{ $d(new Date(), 'date') }}</span>
-          </li>
-          <li class="time">
-            <Tag class="gray">TIME</Tag>
-            <span>{{ $d(new Date(), 'time') }}</span>
-          </li>
-          <li class="datetime">
-            <Tag class="gray">DATETIME</Tag>
-            <span>{{ $d(new Date(), 'dateTime') }}</span>
-          </li>
-        </ul>
+        <div class="datetimes">
+          <h2 class="title">DateTime</h2>
+          <ul>
+            <li class="date">
+              <Tag class="gray">DATE</Tag>
+              <span>{{ $d(new Date(), 'date') }}</span>
+            </li>
+            <li class="time">
+              <Tag class="gray">TIME</Tag>
+              <span>{{ $d(new Date(), 'time') }}</span>
+            </li>
+            <li class="datetime">
+              <Tag class="gray">DATETIME</Tag>
+              <span>{{ $d(new Date(), 'dateTime') }}</span>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="row">
         <div class="col-sm-4 col-md-12 col-lg-12">
@@ -58,19 +60,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.datetimes,
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .datetimes {
-  width: 300px;
   margin: 0 auto 30px;
-  & > li {
-    margin-bottom: 4px;
+
+  ul {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: $blue-light;
+    li {
+      margin-bottom: 4px;
+    }
   }
 }
 .calendar {
-  width: 300px;
   margin: 0 auto;
 }
 
-h2 {
+.title {
   font-size: 30px;
 }
 
