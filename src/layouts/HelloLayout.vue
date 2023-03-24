@@ -15,7 +15,7 @@
                   <nav class="gnb-nav">
                     <ul class="gnb-nav-list">
                       <li class="gnb-nav-item">
-                        <!--언어설정-->
+                        <LanguageSelector />
                       </li>
                       <li class="gnb-nav-item">
                         <!--로그인/로그아웃-->
@@ -32,27 +32,15 @@
     <main class="content">
       <router-view />
     </main>
-    <aside>
-      <!-- <Modal>
-        <template v-slot:header>언어설정</template>
-        <template v-slot:body></template>
-      </Modal>
-      <Modal>
-        <template v-slot:header>로그아웃</template>
-        <template v-slot:body></template>
-      </Modal>
-      <Shadow /> -->
-    </aside>
   </div>
 </template>
 
 <script>
-// import Modal from '@/components/common/Modal.vue'
-// import Shadow from '@/components/common/Shadow.vue'
+import LanguageSelector from '@/components/LanguageSelector.vue'
 
 export default {
   name: 'hello-layout',
-  // components: { Modal, Shadow },
+  components: { LanguageSelector },
 }
 </script>
 
