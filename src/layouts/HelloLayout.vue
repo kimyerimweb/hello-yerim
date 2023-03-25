@@ -67,6 +67,7 @@ h1 {
   height: $gnb-height-sm;
   background-color: $white;
   border-bottom: 1px solid $border;
+  z-index: $gnb;
 
   &-wrapper {
     display: flex;
